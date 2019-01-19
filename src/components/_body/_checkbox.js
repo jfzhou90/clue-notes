@@ -4,14 +4,32 @@ class CheckBox extends Component{
   constructor(){
     super();
     this.state = {
-
+      checked: 0,
+      color: 'transparent',
     }
   }
+
+  async click(){ // Included await because setting state is a promise.
+    await this.setState({checked: this.state.checked+1 });
+    this.setColor();
+  }
+
+  setColor(){
+    switch(this.state.checked % 3){
+      case 1:
+        this.setState({color: 'green'});
+        break;
+      case 2:
+        this.setState({color: 'red'});
+        break;
+      default:
+        this.setState({color: 'transparent'});
+    }
+  }
+
   render(){
     return (
-      <div className="Container-row Body">
-        check
-      </div>
+        <button className="CheckBox" style={{backgroundColor:this.state.color}} onClick={() => this.click()}/>
     )};
 };
 
