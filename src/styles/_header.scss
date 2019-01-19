@@ -1,8 +1,6 @@
 .Header-logo {
   animation: Header-logo-spin infinite 3s linear;
   height: 10vmin;
-  align-self: flex-start;
-
 }
 
 @keyframes Header-logo-spin {
@@ -20,6 +18,8 @@
   width: 100%;
   padding: 1vh;
   background-color: $dark-blue;
+  border-radius: 10px 50px 10px 50px;
+  box-shadow: 2px 3px $light-blue;
 }
 
 .Header-title {

@@ -4,6 +4,7 @@ import './styles/index.scss';
 // Components
 import {
   Header,
+  Body
 } from './components';
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
           <Header/>
         </div>
         <div className="Container-row">
-          <p>body</p>
+          <Body/>
         </div>
       </div>
     );

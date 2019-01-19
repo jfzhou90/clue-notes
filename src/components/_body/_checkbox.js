@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import CheckBox from './_checkbox.js';
 
-class Body extends Component{
+class CheckBox extends Component{
+  constructor(){
+    super();
+    this.state = {
+
+    }
+  }
   render(){
     return (
       <div className="Container-row Body">
-        <CheckBox/>
+        check
       </div>
     )};
 };
 
-export default Body;
+export default CheckBox;
