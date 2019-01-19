@@ -1,0 +1,30 @@
+.Header-logo {
+  animation: Header-logo-spin infinite 3s linear;
+  height: 10vmin;
+  align-self: flex-start;
+
+}
+
+@keyframes Header-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Header {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1vh;
+  background-color: $dark-blue;
+}
+
+.Header-title {
+  color: $light-blue;
+  font-family: $zcool, cursive;
+}
+
+

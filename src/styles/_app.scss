@@ -1,0 +1,16 @@
+.Container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Content-center{
+  justify-content: center;
+}
+
+@mixin Flex-grow-x {
+  @for $i from 1 through 4 {
+  .Flex-grow-#{$i} { flex-grow: $i; }
+  }
+}
+@include Flex-grow-x;
