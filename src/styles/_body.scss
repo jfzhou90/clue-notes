@@ -1,5 +1,7 @@
 .Body {
+  margin-top: 10px;
   height: 80vh;
+  width: 100%;
 }
 
 .Body-button-add_player {
@@ -14,4 +16,43 @@
   box-shadow: 1px 1px $light-brown;
   color: $dark-blue;
   font-family: $zcool, cursive;
+}
+
+.Body-table{
+  width:100%;
+  border-collapse: collapse;
+  background-color: $baby-blue;
+}
+
+.Body-table_first{
+  width: 25%;
+  color: $dark-blue;
+  font-family: $zcool, cursive;
+  overflow:auto;
+  font-size: 12px;
+}
+
+td, th {
+  border: 1px solid $dark-blue;
+  text-align: left;
+  padding: 5px;
+}
+
+.Body-player_name{
+  height: 13%;
+  width: 10% !important;
+  overflow: hidden;
+  color: $dark-blue;
+  font-family: $zcool, cursive;
+  text-transform: capitalize;
+  vertical-align: top;
+  text-align:center;
+  overflow: auto;
+  font-size: 12px;
+}
+
+.Body-checkbox{
+  width:10%;
+  margin:0;
+  text-align:center;
 }
