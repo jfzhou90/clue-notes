@@ -12,7 +12,7 @@ class Body extends Component{
 
   player_cards = ['Prof. Plum', 'Mr. Green','Col. Mustard', 'Mrs. Peacock', 'Ms. Scarlet', 'Dr. Orchid'];
   weapon_cards = ['Candlestick', 'Knife','Lead Pipe', 'Revolver', 'Rope', 'Wrench'];
-  location_cards = ['Balloom', 'Billard Room', 'Conservatory', 'Dining Hall', 'Hall', 'Kitchen', 'Library', 'Lounge', 'Study'];
+  location_cards = ['Ballroom', 'Billard Room', 'Conservatory', 'Dining Hall', 'Hall', 'Kitchen', 'Library', 'Lounge', 'Study'];
 
   async addPlayer(){
     let player = window.prompt("What's the name of the player?");
@@ -23,11 +23,14 @@ class Body extends Component{
   render(){
     return (
       <div className="Body">
+
         { this.state.players.length < 6 &&
           <button className="Body-button-add_player" onClick={()=>this.addPlayer()}>Add Player</button>
         }
+
         <table className="Body-table">
           <tbody>
+            {/* Players Name */}
             <tr className="Body-table_row">
               <th className="Body-table_blank"></th>
               {this.state.players.map(player => {
@@ -35,6 +38,8 @@ class Body extends Component{
               })}
             </tr>
             
+            {/* Suspect cards */}
+            <tr className='Body-card_categories'>Suspects</tr>
             {this.player_cards.map( card => {
               return (
                 <tr className="Body-table_row" key={card}>
@@ -46,6 +51,8 @@ class Body extends Component{
               )
             })}
 
+            {/* Weapons cards */}
+            <tr className='Body-card_categories'>Weapons</tr>
             {this.weapon_cards.map( card => {
               return (
                 <tr className="Body-table_row" key={card}>
@@ -57,6 +64,8 @@ class Body extends Component{
               )
             })}
 
+            {/* Locations cards */}
+            <tr className='Body-card_categories'>Locations</tr>
             {this.location_cards.map( card => {
               return (
                 <tr className="Body-table_row" key={card}>

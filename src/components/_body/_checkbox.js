@@ -17,10 +17,10 @@ class CheckBox extends Component{
   setColor(){
     switch(this.state.checked % 3){
       case 1:
-        this.setState({color: 'green'});
+        this.setState({color: 'yellow'});
         break;
       case 2:
-        this.setState({color: 'red'});
+        this.setState({color: 'green'});
         break;
       default:
         this.setState({color: 'transparent'});
