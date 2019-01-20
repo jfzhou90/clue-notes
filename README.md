@@ -1,6 +1,6 @@
 This project was made for the board game 'Clue'.
 
-Here's a live version of it, it's made to be used in mobile phones.
+Here's a live version of it, it's made to be used in mobile phones. If you're using it in a computer browser, the buttons may be a bit too small for each cell.
 https://jfzhou-clue.herokuapp.com
 
 To run this locally:
