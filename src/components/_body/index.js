@@ -10,9 +10,9 @@ class Body extends Component{
 
   };
 
-  player_cards = ['Prof. Plum', 'Mr. Green'];
-  weapon_cards = ['Knife', 'Gun'];
-  location_cards = ['Laboratory', 'Dining Hall', 'Living Room', 'Conservatory'];
+  player_cards = ['Prof. Plum', 'Mr. Green','Col. Mustard', 'Mrs. Peacock', 'Ms. Scarlet', 'Dr. Orchid'];
+  weapon_cards = ['Candlestick', 'Knife','Lead Pipe', 'Revolver', 'Rope', 'Wrench'];
+  location_cards = ['Balloom', 'Billard Room', 'Conservatory', 'Dining Hall', 'Hall', 'Kitchen', 'Library', 'Lounge', 'Study'];
 
   async addPlayer(){
     let player = window.prompt("What's the name of the player?");
