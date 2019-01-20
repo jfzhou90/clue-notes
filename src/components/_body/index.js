@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CheckBox from './_checkbox.js';
+import CategoryCard from './_categoryName.js';
 
 class Body extends Component{
   constructor(){
@@ -43,7 +44,7 @@ class Body extends Component{
             {this.player_cards.map( card => {
               return (
                 <tr className="Body-table_row" key={card}>
-                  <th className="Body-table_first" key={card}>{card}</th>
+                  <th className="Body-table_first" key={card}><CategoryCard name={card}/></th>
                   {this.state.players.map(player => {
                     return <th key={Math.random()} className="Body-player_name"><CheckBox/></th>
                   })}
@@ -56,7 +57,7 @@ class Body extends Component{
             {this.weapon_cards.map( card => {
               return (
                 <tr className="Body-table_row" key={card}>
-                  <th className="Body-table_first" key={card}>{card}</th>
+                  <th className="Body-table_first" key={card}><CategoryCard name={card}/></th>
                   {this.state.players.map(player => {
                     return <th key={Math.random()} className="Body-checkbox"><CheckBox/></th>
                   })}
@@ -69,7 +70,7 @@ class Body extends Component{
             {this.location_cards.map( card => {
               return (
                 <tr className="Body-table_row" key={card}>
-                  <th className="Body-table_first" key={card}>{card}</th>
+                  <th className="Body-table_first" key={card}><CategoryCard name={card}/></th>
                   {this.state.players.map(player => {
                     return <th key={Math.random()} className="Body-checkbox"><CheckBox/></th>
                   })}
