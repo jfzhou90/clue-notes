@@ -16,7 +16,7 @@ class CategoryCard extends Component{
 
   render(){
     return (
-        <button className='CategoryName-text' style={this.state.alibi ? {textDecoration:'line-through'} : {}} onClick={() => this.click()}>{this.state.name}</button>
+        <button className='CategoryName-text' style={this.state.alibi ? {textDecoration:'line-through', color:'red'} : {}} onClick={() => this.click()}>{this.state.name}</button>
     )};
 };
 
